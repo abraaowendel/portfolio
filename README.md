@@ -8,7 +8,7 @@
 
 !<!-- [Resultado final do projeto](assets/images/preview.png) -->
 
-<h4 align="center"><a href="https://abraaowendel.github.io/portfolio/" target="_blank">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://abraaowendel.github.io/Portfolio/" target="_blank">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 
