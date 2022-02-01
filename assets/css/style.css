@@ -91,7 +91,7 @@ nav {
   display: block;
   width: 40px;
   height: 3px;
-  margin-top: 8px;
+  margin: 8px 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--text-color);
@@ -149,6 +149,13 @@ p{
   line-height: 35px;
   color: var(--secund-text-color);
 }
+.grid-layout {
+  display: grid;
+  align-items: center;
+  grid-template: auto / 1fr 1fr;
+  height: 100%;
+  position: relative;
+}
 /*   HOME     */
 
 #home {
@@ -162,27 +169,6 @@ p{
   padding: 5px 0;
   
 }
-
-
-.grid-layout {
-  display: grid;
-  align-items: center;
-  grid-template: auto / 1fr 1fr;
-  height: 100%;
-  position: relative;
-}
-.home-photo img {
-  width: 100%;
-  position: relative;
-  animation-name: photoBottomTop;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-/*       */
-#about-me{
-  background-color: #110E1B;
-  height: 90vh;
-}
 .home-text {
   display: flex;
   flex-direction: column;
@@ -190,33 +176,46 @@ p{
   overflow-x: hidden; 
 }
 .home-text h1, .home-text span{
+  visibility: visible;
   animation-name: delayWrite;
-  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-duration: 3s;
 }
+.home-photo img {
+  width: 100%;
+  position: relative;
+  animation: moveUpDown 4s infinite;
+}
+/* ABOUT */
 
+
+/*       */
+#about-me{
+  background-color: #110E1B;
+  height: 90vh;
+}
+.about-photo img,.about-photo img:hover{
+  transition: 2s all;
+}
+.about-photo img:hover{
+  transform:scale(1.1);
+}
 /* ANIMAÇÕES */
+
+
+
 @keyframes delayWrite{
-  0%{
-    visibility: hidden;
-    opacity: 0;
-  }
-  40%{
-    visibility: visible;
-    opacity: 0.6;
-  }
-  100%{
-    opacity: 1;
-  }
+  0%{visibility: hidden;opacity: 0;} 
+  100%{visibility: visible; opacity: 1;}
 }
 @keyframes line{
   0%{width: 0%; }
   100%{width: 100%;}
 }
 
-@keyframes photoBottomTop{
+@keyframes moveUpDown{
   0%,100%{top: 0;}
   50%{top: 30px;}
- 
 }
 /*  */
 
