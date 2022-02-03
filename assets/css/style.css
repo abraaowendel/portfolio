@@ -75,7 +75,7 @@ nav {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -7px;
   height: 2px;
   animation-name: line;
   animation-duration: 0.6s;
@@ -125,7 +125,7 @@ section {
 }
 
 
-h1,h2,a{
+h1,h2,a, h3{
   font-family: "Cera Pro Medium";
   font-weight: normal;
 }
@@ -143,6 +143,9 @@ h2::after{
   color: #4a06c0;
   font-size: 1.75em;
   word-spacing: -10px;
+}
+h3{
+  font-size: 1.6em;
 }
 p{
   font-size: 1.3em;
@@ -192,7 +195,7 @@ p{
 /*       */
 #about-me{
   background-color: #110E1B;
-  height: 90vh;
+  height: 95vh;
 }
 .about-photo img,.about-photo img:hover{
   transition: 2s all;
@@ -200,16 +203,52 @@ p{
 .about-photo img:hover{
   transform:scale(1.1);
 }
-/* ANIMAÇÕES */
 
 
+/* PROJECTS */
 
-@keyframes delayWrite{
-  0%{visibility: hidden;opacity: 0;} 
-  100%{visibility: visible; opacity: 1;}
+#projects{
+  position: relative;
+  background-color: var(--main-color);
+  padding: 80px 50px;
+  text-align: center;
 }
+#projects .grid-layout{
+  grid-template: auto / repeat(3,1fr);
+  text-align: initial;
+}
+
+#projects p{
+  font-size: 1.2em;
+  margin: 20px 0 0;
+}
+
+.card{
+  background-color: var(--third-color);
+  padding: 30px 20px;
+  margin: 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+.card:hover{
+  border-color: var(--second-color);
+}
+#projects #git{
+  display: block;
+  color: #6610F2;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+#projects #git:hover{
+  color: var(--second-color);
+}
+
+/*  */
+
+/* ANIMAÇÕES */
 @keyframes line{
-  0%{width: 0%; }
+  0%{width: 0%;}
   100%{width: 100%;}
 }
 
@@ -248,7 +287,6 @@ p{
   .menu-mobile.active .line:nth-child(3) {
     transform: translateY(-12px) rotate(45deg);
   }
-
   .nav-list {
     position: fixed;
     top: 81px;
@@ -295,6 +333,13 @@ p{
     height: 100%;
     padding: 50px  20px;
   }
+  #projects .grid-layout{
+    grid-template: auto / 1fr;
+    text-align: center;
+  }
+  .card{
+    margin: 20px 0px;
+  }
 }
 
 @media (max-width: 467px){
@@ -302,12 +347,18 @@ p{
     font-size: 2.2em;
   }
   h2{
-    font-size: 36px;
+    font-size: 2.25em;
   }
   p{
     font-size: 1.2em;
   }
   #home span {
     font-size: 1.15em;
+  }
+  .card{
+    font-size: 0.875em;
+  }
+  #projects #git{
+    font-size: initial;
   }
 }
