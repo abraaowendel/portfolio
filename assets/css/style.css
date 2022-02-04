@@ -243,7 +243,6 @@ p{
 #projects #git:hover{
   color: var(--second-color);
 }
-
 /*  */
 
 /* ANIMAÇÕES */
@@ -251,7 +250,6 @@ p{
   0%{width: 0%;}
   100%{width: 100%;}
 }
-
 @keyframes moveUpDown{
   0%,100%{top: 0;}
   50%{top: 30px;}

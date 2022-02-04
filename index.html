@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Abraao Wendel</title>
 </head>
 <body>
@@ -38,7 +40,7 @@
     <main>
         <section id="home">
             <div class="grid-layout">
-                <div class="home-text">
+                <div class="home-text" data-aos="fade-right" data-aos-duration="1000">
                     <span>Olá, eu sou</span>
                     <h1>Abraao Wendel.</h1>
                     <span>Desenvolvedor Front-end</span>
@@ -55,7 +57,7 @@
                 <div class="about-photo">
                     <img src="./assets/images/about.svg" height="350px" alt="">
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Quem sou</h2>
                     <p>Meu nome é Abraao Wendel. Sou Desenvolvedor Front-end e 
                        atualmente estou graduando em Análise e Desenvolvimento
@@ -68,31 +70,33 @@
         <section id="projects">
             <h2>Projetos</h2>
             <div class="grid-layout">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer " class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                     <div class="card">
                         <h3>Em breve</h3>
                         <p>Espere um pouco, estou codando!</p>
                     </div>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer" class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="card">
                         <h3>Em breve</h3>
                         <p>Espere um pouco, estou codando.</p>
                     </div>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer" class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     <div class="card">
                         <h3>Em breve</h3>
                         <p>Espere um pouco, estou codando.</p>
                     </div>
                 </a>
             </div>
-            <a href=" " target="_blank" rel="noopener noreferrer" id="git">Repositórios no GitHub</a>
+            <a href="https://github.com/abraaowendel" target="_blank" rel="noopener noreferrer" id="git">Repositórios no GitHub</a>
         </section>
     </main>
     <footer>
 
     </footer>
     <script src="./assets/js/main.js"></script>
+    
+
 </body>
 </html>

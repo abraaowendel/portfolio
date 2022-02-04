@@ -13,3 +13,5 @@ document.querySelectorAll(".nav-list a").forEach(a =>
         navMenu.classList.remove('active')
     }
 ))
+
+AOS.init();
