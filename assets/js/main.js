@@ -6,7 +6,6 @@ menuToogle.addEventListener('click', () => {
     navMenu.classList.toggle('active')
 })  
 
-
 document.querySelectorAll(".nav-list a").forEach(a => 
     a.addEventListener('click', () => {
         menuToogle.classList.remove('active')

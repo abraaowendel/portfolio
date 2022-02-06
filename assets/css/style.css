@@ -31,15 +31,19 @@
 }
 
 header,
-section,
 footer {
   padding: 0 100px;
+}
+section{
+  padding: 100px;
+  overflow-x: hidden;
+
 }
 /*      HEADER    */
 header {
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid #262627;
+  border-bottom:1px solid #262627;
   z-index: 999;
   background-color: var(--main-color);
 }
@@ -66,10 +70,10 @@ nav {
   font-size: 1.3em;
   transition: 0.5s ease;
   color: var(--title-color);
-  transition: 1s linear;
 }
 .nav-list li a:hover {
-  color: var(--secund-text-color);
+  color: var(--secund-text-color)
+  
 }
 .nav-list li a:hover::after{
   content: '';
@@ -79,12 +83,12 @@ nav {
   height: 2px;
   animation-name: line;
   animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-  background-image: linear-gradient(
-    90deg,
-    var(--main-color),
-    var(--second-color)
-  );
+  animation-fill-mode: forwards;
+  background: -webkit-gradient(linear, right top, left top, from(#6610f2), to(#17161d));
+  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+ 
 }
 
 .line {
@@ -98,10 +102,6 @@ nav {
   border-radius: 10px;
 }
 /*         */
-
-section {
-  overflow-x: hidden;
-}
 .btn {
   border-radius: 3px;
   padding: 15px 0;
@@ -123,7 +123,6 @@ section {
   transition: 1s all;
   max-width: 300px;
 }
-
 
 h1,h2,a, h3{
   font-family: "Cera Pro Medium";
@@ -148,7 +147,7 @@ h3{
   font-size: 1.6em;
 }
 p{
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 35px;
   color: var(--secund-text-color);
 }
@@ -210,7 +209,6 @@ p{
 #projects{
   position: relative;
   background-color: var(--main-color);
-  padding: 80px 50px;
   text-align: center;
 }
 #projects .grid-layout{
@@ -219,20 +217,21 @@ p{
 }
 
 #projects p{
-  font-size: 1.2em;
   margin: 20px 0 0;
 }
 
 .card{
   background-color: var(--third-color);
-  padding: 30px 20px;
-  margin: 20px;
+  padding: 40px 20px;
   border: 2px solid transparent;
   border-radius: 5px;
-  transition: 0.5s all;
+}
+a .card{
+  margin: 10px;
 }
 .card:hover{
   border-color: var(--second-color);
+
 }
 #projects #git{
   display: block;
@@ -243,6 +242,9 @@ p{
 #projects #git:hover{
   color: var(--second-color);
 }
+#projects .grid-layout{
+  padding: 20px 0;
+}
 /*  */
 
 /* ANIMAÇÕES */
@@ -251,27 +253,39 @@ p{
   100%{width: 100%;}
 }
 @keyframes moveUpDown{
-  0%,100%{top: 0;}
+  0%,100%{top: 0px;}
   50%{top: 30px;}
 }
 /*  */
 
 @media screen and (max-width: 1200px){
-  .grid-layout .about-photo {
+  header,footer{
+    padding: 0 50px;
+  }
+  section{
+    padding: 80px 50px;
+
+  }
+  .grid-layout .about-photo{
     display: none;
   }
   #about-me{
     height: 100%;
-    padding:100px  50px;
   }
   #about-me .grid-layout{
     grid-template: auto/ auto;
   } 
+  .nav-list{
+    gap: 40px;
+  }
 }
 
 @media (max-width: 992px) {
-  header, section, footer {
-    padding: 0 25px
+  header, footer {
+    padding: 0 25px;
+  }
+  section{
+    padding: 100px 25px;  
   }
   .menu-mobile {
     display: block;
@@ -302,7 +316,7 @@ p{
     margin: 30px 0;
   }
   .nav-list.active {
-    padding: 80px 0 0;
+    padding: 60px 0 0;
     left: 0;
   }
   .nav-list li a{
@@ -329,14 +343,15 @@ p{
   }
   #about-me{
     height: 100%;
-    padding: 50px  20px;
   }
   #projects .grid-layout{
     grid-template: auto / 1fr;
-    text-align: center;
   }
   .card{
-    margin: 20px 0px;
+    margin: 0px;
+  }
+  a .card{
+    margin: 15px 0;
   }
 }
 
