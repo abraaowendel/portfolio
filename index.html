@@ -27,7 +27,7 @@
                         <a href="#projects">Projetos</a>
                     </li>
                     <li>
-                        <a href="#">Conhecimentos</a>
+                        <a href="#knowledge">Conhecimentos</a>
                     </li>
                     <li>
                         <a href="#">Contato</a>
@@ -39,56 +39,87 @@
 
     <main>
         <section id="home">
-            <div class="grid-layout">
-                <div class="home-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    <span>Olá, eu sou</span>
-                    <h1>Abraao Wendel.</h1>
-                    <span>Desenvolvedor Front-end</span>
-                    <a href="https://www.instagram.com/abraaowendel1/" class="btn" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </div>       
-                <div class="home-photo">
-                    <img src="./assets/images/main-photo.svg" height="400px" alt="">
-                </div> 
+            <div class="container">
+                <div class="grid-layout">
+                    <div class="home-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <span>Olá, eu sou</span>
+                        <h1>Abraao Wendel.</h1>
+                        <span>Desenvolvedor Front-end</span>
+                        <a href="https://www.instagram.com/abraaowendel1/" class="btn" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>       
+                    <div class="home-photo">
+                        <img src="./assets/images/main-photo.svg" height="400px" alt="">
+                    </div> 
+                </div>
             </div>
         </section>
 
         <section id="about-me">
-            <div class="grid-layout" data-aos="fade-down" data-aos-duration="2000">
-                <div class="about-photo">
-                    <img src="./assets/images/about.svg" height="350px" alt="">
+            <div class="container">
+                <div class="grid-layout" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="about-photo">
+                        <img src="./assets/images/about.svg" height="350px" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h2>Quem sou</h2>
+                        <p>Meu nome é Abraao Wendel. Sou Desenvolvedor Front-end e 
+                           atualmente estou graduando em Análise e Desenvolvimento
+                           de Sistemas. Desenvolvo sites modernos, responsivos e de alta qualidade.
+                        </p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2>Quem sou</h2>
-                    <p>Meu nome é Abraao Wendel. Sou Desenvolvedor Front-end e 
-                       atualmente estou graduando em Análise e Desenvolvimento
-                       de Sistemas. Desenvolvo sites modernos, responsivos e de alta qualidade.
-                    </p>
-                </div>
-            </div>
+            </div>        
         </section>
         <section id="projects">
-            <h2 data-aos="fade-down" data-aos-duration="2000">Projetos</h2>
-            <div class="grid-layout">
-                <a href="" target="_blank" rel="noopener noreferrer " class="cards" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200">
-                    <div class="card">
-                        <h3>Em breve</h3>
-                        <p>Espere um pouco, estou codando!</p>
-                    </div>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer" class="cards" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="600">
-                    <div class="card">
-                        <h3>Em breve</h3>
-                        <p>Espere um pouco, estou codando.</p>
-                    </div>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer" class="cards" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="1000">
-                    <div class="card">
-                        <h3>Em breve</h3>
-                        <p>Espere um pouco, estou codando.</p>
-                    </div>
-                </a>
+            <div class="container">
+                <h2 data-aos="fade-down" data-aos-duration="2000">Projetos</h2>
+                <div class="grid-layout">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200">
+                        <div class="card">
+                            <h3>Em breve</h3>
+                            <p>Espere um pouco, estou codando!</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="600">
+                        <div class="card">
+                            <h3>Em breve</h3>
+                            <p>Espere um pouco, estou codando.</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="1000">
+                        <div class="card">
+                            <h3>Em breve</h3>
+                            <p>Espere um pouco, estou codando.</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="https://github.com/abraaowendel" target="_blank" rel="noopener noreferrer" id="git">Repositórios no GitHub</a>
+            </div>          
+        </section>
+        <section id="knowledge">
+            <div class="container">
+                <h2 data-aos="fade-down" data-aos-duration="1300">Conhecimentos</h2>
+                <p data-aos="fade-down" data-aos-duration="1300" data-aos-delay="100"> Tecnologias que uso em meus projetos atualmente.</p>
+                <div class="grid-layout">
+                    <article class="card odd">
+                        <img src="./assets/icons/icon-html.svg" alt="" >
+                        <span>HTML5</span>
+                    </article>
+                    <article class="card odd">
+                        <img src="./assets/icons/icon-css.svg" alt="">
+                        <span>CSS3</span>
+                    </article>
+                    <article class="card even">
+                        <img src="./assets/icons/icon-js.svg" alt="">
+                        <span>JAVASCRIPT</span>
+                    </article>
+                    <article class="card even">
+                        <img src="./assets/icons/icon-bootstrap.svg" alt="">
+                        <span>BOOTSTRAP</span>
+                    </article>
+                </div>
+                <p>< Passe o mouse para ler. ></p>  
             </div>
-            <a href="https://github.com/abraaowendel" target="_blank" rel="noopener noreferrer" id="git">Repositórios no GitHub</a>
         </section>
     </main>
     <footer>
