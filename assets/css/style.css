@@ -27,7 +27,7 @@
   list-style: none;
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: "Cera Pro Regular";
+  font-family: "Cera Pro Regular", sans-serif;
 }
 
 header,
@@ -266,11 +266,11 @@ a .card{
   margin: 45px 0;
 }
 #knowledge .card{
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: relative;
   padding: 20px;
   cursor: pointer;
   background-color:var(--main-color);
