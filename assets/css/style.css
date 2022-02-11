@@ -200,7 +200,6 @@ p{
 /*       */
 #about-me,#knowledge{
   background-color: #110E1B;
-  height: 95vh;
 }
 .about-photo img,.about-photo img:hover{
   transition: 2s all;
