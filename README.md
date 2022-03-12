@@ -29,6 +29,7 @@ Para o desenvolvimento deste site estou utilizando as seguintes tecnologias:
 - HTML5;
 - CSS3;
 - JavaScript;
+- Biblioteca AOS (Animações)
 
 ---
 
