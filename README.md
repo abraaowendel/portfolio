@@ -32,17 +32,3 @@ Para o desenvolvimento deste site estou utilizando as seguintes tecnologias:
 - Biblioteca AOS (Animações)
 
 ---
-
-## 🙏 Agradecimentos
-
-Esse projeto foi inspirado no portfolio do IURICODE.
-
-Aqui fica meu agradecimento a ele.
-
-Sigam ele nas redes sociais.
-
-<a href="https://github.com/iuricode">GitHub</a> <br>
-<a href="https://www.instagram.com/iuricode/">Instagram</a><br>
-<a href="https://www.linkedin.com/in/iuricode">Linkedin</a>
-
----
