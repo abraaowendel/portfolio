@@ -6,7 +6,7 @@
   Portfólio criado para que posso mostrar meus projetos ao decorrer da minha carreira profissional.
 </h4>
 
-!<!-- [Resultado final do projeto](assets/images/preview.png) -->
+!(assets/images/preview.png)
 
 <h4 align="center"><a href="https://abraaowendel.github.io/Portfolio/" target="_blank">Clique para visitar o projeto</a></h4>
 
