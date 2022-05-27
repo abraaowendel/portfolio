@@ -153,7 +153,7 @@ h2::after{
   word-spacing: -10px;
 }
 h3{
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 p{
   font-size: 1.2em;
@@ -201,7 +201,7 @@ p{
 /* ABOUT */
 
 #about-me,#knowledge{
-  background-color: #110E1B;
+  background-color: var(--third-color);
 }
 .about-photo img,.about-photo img:hover{
   transition: 2s all;
@@ -209,10 +209,7 @@ p{
 .about-photo img:hover{
   transform:scale(1.1);
 }
-
-
 /* PROJECTS */
-
 #projects{
   position: relative;
   background-color: var(--main-color);
@@ -222,11 +219,10 @@ p{
   grid-template: auto / repeat(3,1fr);
   text-align: initial;
 }
-
 #projects p{
   margin: 20px 0 0;
+  font-size: 1.1em;
 }
-
 .card{
   background-color: var(--third-color);
   padding: 40px 20px;
@@ -235,10 +231,10 @@ p{
 }
 a .card{
   margin: 10px;
+  min-height: 280px;
 }
 .card:hover{
   border-color: var(--second-color);
-
 }
 #projects #git{
   display: block;
@@ -252,14 +248,10 @@ a .card{
 #projects .grid-layout{
   padding: 20px 0;
 }
-
-
 /* KNOWLEDGE */
-
 #knowledge{
   text-align: center;
 }
-
 #knowledge .grid-layout{
   grid-template: auto / repeat(4, 150px);
   justify-content: center;
@@ -280,7 +272,6 @@ a .card{
   transition: 0.4s ease;
   cursor: pointer;
 }
-
 .grid-layout .card.even span,
 .grid-layout .card.odd span{
   display: none;
@@ -292,14 +283,12 @@ a .card{
   border-radius: 2px;
   padding: 5px 0;
 }
-
 #knowledge .card:hover span{
   display: block;
 }
 #knowledge p{
   padding: 5px 0;
 }
-
 /* CONTACT */
 
 #contact{
@@ -325,7 +314,6 @@ a .card{
 footer{
   background-color: var(--main-color);
 }
-
 footer .grid-layout{
   display: flex;
   justify-content: space-between;
@@ -371,9 +359,11 @@ svg:hover path{
   .nav-list{
     gap: 40px;
   }
+  #projects p{
+    margin: 15px 0 0;
+    font-size: 1.1em;
+  }
 }
-
-
 @media screen and (max-width: 992px) {
   header, footer {
     padding: 0 25px;
@@ -439,6 +429,15 @@ svg:hover path{
   #projects .grid-layout{
     grid-template: auto / 1fr;
   }
+  #projects p{
+    font-size: 1.1em;
+  }
+  a .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 237px;
+  }
   #knowledge .grid-layout{
     grid-template: repeat(2, auto)/ repeat(2, 1fr);
   } 
@@ -466,12 +465,7 @@ svg:hover path{
   .card{
     margin: 0px;
   }
-  a .card{
-    margin: 15px 0;
-  }
-  
 }
-
 @media (max-width: 467px){
   h1{
     font-size: 2.2em;
@@ -482,6 +476,9 @@ svg:hover path{
   p{
     font-size: 1.2em;
   }
+  section,#contact{
+    padding: 100px 20px;  
+  }
   #home span {
     font-size: 1.15em;
   }
@@ -490,6 +487,12 @@ svg:hover path{
   }
   #projects #git{
     font-size: initial;
+  }
+  a .card{
+    min-height: auto;
+  }
+  #projects p{
+    font-size: 1em;
   }
   #knowledge h2{
     font-size: 2.1em;
