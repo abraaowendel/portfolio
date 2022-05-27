@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Portfólio criado para que posso mostrar meus projetos ao decorrer da minha carreira profissional.
+  Portfólio criado para que eu possa mostrar meus projetos ao decorrer da minha carreira profissional.
 </h4>
 
 <div align="center">
