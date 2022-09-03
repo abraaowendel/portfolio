@@ -228,6 +228,7 @@ p{
   padding: 40px 20px;
   border: 2px solid transparent;
   border-radius: 5px;
+  position: relative;
 }
 a .card{
   margin: 10px;
@@ -270,19 +271,29 @@ a .card{
   background-color:var(--main-color);
   min-height: 150px;
   transition: 0.4s ease;
-  cursor: pointer;
+  cursor: pointer
 }
 .grid-layout .card.even span,
 .grid-layout .card.odd span{
+  min-height: 20px;
   display: none;
   position: absolute;
+  border-radius: 2px;
+  padding: 5px 0;
+  background-color: var(--second-color);
+}
+
+.grid-layout .card.even span{
   bottom: -44px;
   left: 0;
   right: 0;
-  background-color: var(--second-color);
-  border-radius: 2px;
-  padding: 5px 0;
 }
+.grid-layout .card.odd span{
+  top: -44px;
+  left: 0;
+  right: 0;
+}
+
 #knowledge .card:hover span{
   display: block;
 }
@@ -297,8 +308,8 @@ a .card{
   padding: 70px 100px;
 }
 #contact .grid-layout{
-  grid-template: auto/ repeat(3,1fr);
-  gap: 20px;
+  grid-template: auto/ repeat(2,1fr);
+  gap: 60px;
   margin: 40px 0;
 }
 #contact h4{
@@ -437,33 +448,27 @@ svg:hover path{
     flex-direction: column;
     justify-content: center;
     min-height: 237px;
+    
   }
   #knowledge .grid-layout{
     grid-template: repeat(2, auto)/ repeat(2, 1fr);
   } 
   #knowledge .card{
     padding: 40px 0;
+    margin: 0;
   }
   #contact .grid-layout{
     gap: 30px;
   }
+  
+  .grid-layout .card.odd span,
   .grid-layout .card.even span{
-    display: none;
-    position: absolute;
-    bottom: -44px;
-    left: 0;
-    right: 0;
+    top: unset;
+    bottom: 0;
   }
-  .grid-layout .card.odd span{
-    display: none;
-    position: absolute;
-    top: -44px;
-    left: 0;
-    right: 0;
-    bottom:initial;
-  }
+
   .card{
-    margin: 0px;
+    margin: 10px 0;
   }
 }
 @media (max-width: 467px){
@@ -502,6 +507,7 @@ svg:hover path{
   }
   #knowledge .grid-layout{
     padding: 20px 0;
+    grid-template: repeat(6, auto) / 1fr;
   } 
   footer .grid-layout{
     flex-direction: column-reverse;
