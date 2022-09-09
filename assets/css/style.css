@@ -215,24 +215,19 @@ p{
   background-color: var(--main-color);
   text-align: center;
 }
-#projects .grid-layout{
-  grid-template: auto / repeat(3,1fr);
-  text-align: initial;
-}
 #projects p{
   margin: 20px 0 0;
   font-size: 1.1em;
 }
+
 .card{
   background-color: var(--third-color);
   padding: 40px 20px;
   border: 2px solid transparent;
   border-radius: 5px;
   position: relative;
-}
-a .card{
-  margin: 10px;
-  min-height: 280px;
+  min-height: 250px;
+
 }
 .card:hover{
   border-color: var(--second-color);
@@ -246,15 +241,40 @@ a .card{
 #projects #git:hover{
   color: var(--second-color);
 }
-#projects .grid-layout{
-  padding: 20px 0;
+#projects .card{
+  position: relative;
+  max-width: 400px;
+  min-height: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.owl-prev, .owl-next{
+  display: block;
+  position: absolute;
+  font-size: 5em !important;
+  top: 75px;
+  height: 0;
+}
+.owl-prev:hover, .owl-next:hover{
+  color: #380c82;
+}
+.owl-prev{
+  left: -50px;
+}
+.owl-next{
+  right: -50px;
+}
+.owl-theme .owl-nav{
+  margin-top: 25px !important;
 }
 /* KNOWLEDGE */
 #knowledge{
   text-align: center;
 }
 #knowledge .grid-layout{
-  grid-template: auto / repeat(4, 150px);
+  grid-template: auto / repeat(3, 150px);
   justify-content: center;
   gap: 30px;
   height: auto;
@@ -374,10 +394,28 @@ svg:hover path{
     margin: 15px 0 0;
     font-size: 1.1em;
   }
+  #projects .card{
+
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 700px){
+  #projects .card{
+    min-height: 280px;
+  }
+  .owl-item{
+     margin: 0;
+  }
 }
 @media screen and (max-width: 992px) {
   header, footer {
     padding: 0 25px;
+  }
+  .owl-prev, .owl-next{
+    display: none;
+  }
+  .owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 25px !important;
   }
   section,#contact{
     padding: 100px 25px;  
@@ -447,8 +485,9 @@ svg:hover path{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 237px;
-    
+  }
+  #projects .card{
+    min-height: 270px;
   }
   #knowledge .grid-layout{
     grid-template: repeat(2, auto)/ repeat(2, 1fr);
@@ -460,15 +499,10 @@ svg:hover path{
   #contact .grid-layout{
     gap: 30px;
   }
-  
   .grid-layout .card.odd span,
   .grid-layout .card.even span{
     top: unset;
     bottom: 0;
-  }
-
-  .card{
-    margin: 10px 0;
   }
 }
 @media (max-width: 467px){

@@ -7,6 +7,8 @@
     <title>Portfólio | Abraao Wendel | Front-end developer</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -71,62 +73,7 @@
         <section id="projects">
             <div class="container">
                 <h2 data-aos="fade-down" data-aos-duration="1500">Projetos</h2>
-                <div class="grid-layout">
-                    <a href="https://abraaowendel.github.io/eSneakers/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="card">
-                            <h3>eSneakers</h3>
-                            <p>eSneakers é uma loja virtual que veio revolucionar o mercado de tênis. Quem usa não se decepciona.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/ClimaAgora/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up"" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="card">
-                            <h3>ClimaAgora</h3>
-                            <p>No ClimaAgora você pode encontrar as condições climáticas da sua cidade em tempo real.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/BuscaCEP/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>BuscaCep</h3>
-                            <p>O BuscaCep mostra informações como Rua, Bairro, Cidade e Estado sobre um determinado CEP válido.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/TransformaFlix/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>TransformaFlix</h3>
-                            <p>TransformaFlix é um serviço de stream com várias séries, filmes e desenhos da nova e velha geração.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/Planetario/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>Planetário</h3>
-                            <p>O Planetário é um projeto educativo onde você pode ver informações sobre todos os planetas do Sistema Solar.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/Lista-de-Tarefas/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>Lista de Tarefas</h3>
-                            <p> Suas tarefas pendentes fácil de usar. Você pode adicionar, marcar como concluída e remover suas tarefas.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/Countdown/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>Countdown</h3>
-                            <p>Usando este projeto, você pode saber quantos dias, horas e segundos faltam até o ano novo 2023.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/Pomodoro/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>Pomodoro</h3>
-                            <p>O Pomodoro é um gerenciador de tempo que ajuda você a gerenciar seu tempo com eficiência.</p>
-                        </div>
-                    </a>
-                    <a href="https://abraaowendel.github.io/Cronometro/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="card">
-                            <h3>Cronômetro</h3>
-                            <p>O Cronômetro on-line conta em milésimos de segundo o tempo passado após você clicar no botão "Comece".</p>
-                        </div>
-                    </a>
-                </div>
+                <div class="owl-carousel owl-theme"></div>
                 <a href="https://github.com/abraaowendel" target="_blank" rel="noopener noreferrer" id="git">Repositórios no GitHub</a>
             </div>          
         </section>
@@ -146,7 +93,7 @@
                         <img src="./assets/icons/icon-js.svg" alt="Logo JavaScript">
                         <span>JavaScript</span>
                     </article>
-                    <article class="card odd" data-aos="flip-left">
+                    <article class="card even" data-aos="flip-left">
                         <img src="./assets/icons/icon-react.svg" alt="Logo React">
                         <span>React</span>
                     </article>
@@ -221,6 +168,10 @@
             </ul>
         </div>
     </footer>
+    <script src="./assets/js/carrousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/owl-carrousel.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
