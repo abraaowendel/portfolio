@@ -1,16 +1,18 @@
-const menuToogle = document.querySelector('.menu-mobile')
-const navMenu = document.querySelector('.nav-list')
+const btnMenu = document.querySelector(".menuMobile");
+const menuList = document.querySelector(".nav-list");
 
-menuToogle.addEventListener('click', () => {
-    menuToogle.classList.toggle('active')
-    navMenu.classList.toggle('active')
-})  
+btnMenu
+.addEventListener("click", () => {
+    btnMenu.classList.toggle("active");
+    menuList.classList.toggle("active");
+});
 
-document.querySelectorAll(".nav-list a").forEach(a => 
-    a.addEventListener('click', () => {
-        menuToogle.classList.remove('active')
-        navMenu.classList.remove('active')
-    }
-))
+menuList
+.querySelectorAll("a")
+.forEach((item) => item
+.addEventListener("click", () => {
+    btnMenu.classList.remove("active");
+    menuList.classList.remove("active");
+}));
 
-AOS.init();
+document.querySelector("footer").innerHTML = `© ${new Date().getFullYear()} Abraao Wendel`
