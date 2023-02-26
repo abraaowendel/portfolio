@@ -46,7 +46,7 @@ body{
   width: 100%;
   height: 5px;
   border-radius: 15px;
-  background: linear-gradient(to right, var(--second-color), #70AD51);
+  background: linear-gradient(145deg, var(--second-color), var(--secund-text-color));
   margin: 15px 0;
 }
 
@@ -118,10 +118,31 @@ header nav,
 #about-me .bottom svg:nth-child(1){
   margin: 0 10px;
 }
-/*  PROJECTS   */
-#projects{
-
+.btns{
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+.btns a{
+  display: inline-block;
+  min-width: 150px;
+  background-color: var(--second-color);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: .875em;
+  color: var(--main-color);
+  font-weight: 600;
+  text-align: center;
+  transition: .3s all ease-in;
+}
+.btns a:nth-child(2){
+  background-color: var(--secund-text-color);
+}
+.btns a:hover{
+  opacity: .6;
+}
+/*  PROJECTS   */
 #projects .cards{
   display: flex;
   justify-content: space-between;
@@ -307,5 +328,9 @@ footer{
   }
   .icons-item h3{
     font-size: 1.4em;
+  }
+  .btns{
+    justify-content: center;
+    gap: 10px;
   }
 } 
