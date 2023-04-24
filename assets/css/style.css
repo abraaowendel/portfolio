@@ -37,8 +37,10 @@ footer{
 
 html{
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
+
 }
+
 body{
    background-color: var(--main-color);
 }
