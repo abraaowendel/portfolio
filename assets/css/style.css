@@ -32,7 +32,7 @@ footer, .layout,nav{
   margin: auto;
 }
 .layout{
-  padding: 50px 30px;
+  padding: 45px 30px;
 }
 
 html{
@@ -88,7 +88,7 @@ header nav,
   transition: .2s all ease-in-out;
 }
 .nav-list li a:hover{
-  transition: .4s all ease-in;
+  transition: .2s all ease-in;
   color: var(--secund-text-color);
 }
 .menuMobile{
@@ -103,6 +103,9 @@ header nav,
   align-items: center;
   flex-direction: column;
   min-height: 95vh;
+}
+#about-me .layout .sides .left--Side h1 span b{
+  animation: 1s slidein infinite;
 }
 #about-me .sides{
   width: 100%;
@@ -183,6 +186,11 @@ header nav,
   cursor: pointer;
 }
 #projects 
+  .cards 
+  .card:hover{
+    border-color: var(--secund-text-color);
+}
+#projects 
 .cards 
 .card h3{
   font-size: 1.4em;
@@ -213,8 +221,16 @@ p{
   font-weight: 400;
   line-height: 30px;
 }
-
-
+#projects .layout a{
+  display: block;
+  text-align: center;
+  margin-top: 45px;
+  font-size: 1.3em;
+  color: var(--second-color);
+}
+#projects .layout a:hover{
+  opacity: .8;
+}
 
 /*     */
 /*  Skills  */
@@ -262,7 +278,16 @@ p{
 }
 footer{
   margin: 20px auto;
-  padding: 10px;
+  padding: 15px;
+  font-size: 1.1em;
+}
+footer i{
+  color: var(--second-color);
+}
+@keyframes slidein {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 /*  */
 @media screen and (max-width: 1110px){
@@ -292,13 +317,8 @@ footer{
   }
 }
 /*       */
-footer{
-  padding: 15px;
-  font-size: 1.1em;
-}
-footer i{
-  color: var(--second-color);
-}
+
+
 @media screen and (max-width: 992px) {
  .nav-list{
     position: absolute;
