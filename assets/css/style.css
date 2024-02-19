@@ -188,7 +188,7 @@ header nav,
 #projects 
   .cards 
   .card:hover{
-    border-color: var(--secund-text-color);
+    opacity: .6;
 }
 #projects 
 .cards 
@@ -226,7 +226,7 @@ p{
   text-align: center;
   margin-top: 45px;
   font-size: 1.3em;
-  color: var(--second-color);
+  color: var(--text-color);
 }
 #projects .layout a:hover{
   opacity: .8;
