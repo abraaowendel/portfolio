@@ -257,7 +257,6 @@
         </section>
         <section id="contact">
             <div class="layout">
-
                 <h2 class="title">Contato</h2>
                 <p>
                     Quer entrar em contato? Entre em contato comigo em qualquer uma das
@@ -290,6 +289,7 @@
     <footer></footer>
 </body>
 <script defer>
+
     const btnMenu = document.querySelector(".menuMobile");
     const menuList = document.querySelector(".nav-list");
     const cards = document.querySelector("#projects .cards");
@@ -313,12 +313,11 @@
             console.error('Erro ao carregar o arquivo JSON:', error);
         });
 
-
-
     btnMenu.addEventListener("click", () => {
         btnMenu.classList.toggle("active");
         menuList.classList.toggle("active");
     });
+
     menuList.querySelectorAll("a").forEach((item) =>
         item.addEventListener("click", () => {
             btnMenu.classList.remove("active");

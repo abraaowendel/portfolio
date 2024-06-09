@@ -5,6 +5,7 @@
   --text-color: #f8f8f8;
   --secund-text-color: #bebebe;
 }
+
 *::-webkit-scrollbar {
   width: 8px;
 }
@@ -27,126 +28,144 @@
   color: var(--text-color);
   font-family: "Archivo", sans-serif;
 }
-footer, .layout,nav{
+
+footer,
+.layout,
+nav {
   max-width: 1250px;
   margin: auto;
 }
-.layout{
+
+.layout {
   padding: 45px 30px;
 }
 
-html{
+html {
   overflow-x: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
-main{
+
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-section{
+
+section {
   width: 100%;
   padding: 40px 30px;
 }
 
-body{
-   background-color: var(--main-color);
+body {
+  background-color: var(--main-color);
 }
 
 
-.title{
+.title {
   text-align: center;
   font-size: 2.3em;
   margin: 30px 0;
 }
-.title::after{
+
+.title::after {
   content: ".";
   margin-left: 8px;
   color: var(--second-color);
 }
+
 /* HEADER */
-header{
+header {
   position: fixed;
   left: 0;
   right: 0;
   background-color: var(--main-color);
   padding: 15px;
+  z-index: 99;
 }
 
-header nav, 
-.nav-list{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 1;
+header nav,
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
-.nav-list li a{
+
+.nav-list li a {
   margin: 0 15px;
   font-size: 1.2em;
   color: var(--second-color);
   transition: .2s all ease-in-out;
 }
-.nav-list li a:hover{
+
+.nav-list li a:hover {
   transition: .2s all ease-in;
   color: var(--secund-text-color);
 }
-.menuMobile{
+
+.menuMobile {
   display: none;
 }
+
 /*       */
 
 /*   ABOUT ME    */
-#about-me{
+#about-me {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   min-height: 95vh;
 }
-#about-me .layout .sides .left--Side h1 span b{
+
+#about-me .layout .sides .left--Side h1 span b {
   display: inline;
   animation: 1s slidein infinite;
 }
 
 
-#about-me .sides{
+#about-me .sides {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 35px;
 }
-#about-me 
-.left--Side h1{
+
+#about-me .left--Side h1 {
   font-size: 2.7em;
-  
+
 }
 
-#about-me 
-.left--Side span {
+#about-me .left--Side span {
   color: var(--second-color);
   letter-spacing: 4px;
 }
-#about-me 
-.right--Side img{
+
+#about-me .right--Side img {
   width: 100%;
   height: 400px;
 }
-#about-me .bottom{
+
+#about-me .bottom {
   margin-bottom: 30px;
 }
-#about-me .bottom svg{
+
+#about-me .bottom svg {
   cursor: pointer;
 }
-#about-me .bottom svg:nth-child(1){
+
+#about-me .bottom svg:nth-child(1) {
   margin: 0 10px;
 }
-.btns{
+
+.btns {
   margin: 30px 0;
   display: flex;
 }
-.btns a{
+
+.btns a {
   display: inline-block;
   min-width: 150px;
   background-color: var(--second-color);
@@ -158,93 +177,92 @@ header nav,
   text-align: center;
   transition: .3s all ease-in;
 }
-.btns a:nth-child(2){
+
+.btns a:nth-child(2) {
   background-color: var(--secund-text-color);
 }
-.btns a:hover{
+
+.btns a:hover {
   opacity: .6;
 }
+
 /*  PROJECTS   */
-#projects, #contact{
+#projects,
+#contact {
   background-color: var(--third-color);
 }
-#projects .cards{
+
+#projects .cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-#projects 
-.cards 
-.card{
+
+#projects .cards .card {
   display: flex;
   flex-direction: column;
   background-color: var(--main-color);
   border-radius: 2px;
   max-width: 383px;
   min-height: 200px;
-  padding:40px 30px;
+  padding: 40px 30px;
   word-wrap: break-word;
   border: 1px solid var(--second-color);
   border-color: var(--second-color);
   cursor: pointer;
 }
-#projects 
-  .cards 
-  .card:hover{
-    opacity: .6;
+
+#projects .cards .card:hover {
+  opacity: .6;
 }
-#projects 
-.cards 
-.card h3{
+
+#projects .cards .card h3 {
   font-size: 1.4em;
 }
-#projects 
-.cards 
-.card 
-a{
+
+#projects .cards .card a {
   padding: 10px 0;
   font-weight: 400;
   font-size: .875em;
   color: var(--second-color);
 }
-#projects 
-.cards 
-.card 
-a:hover{
- opacity: .8;
+
+#projects .cards .card a:hover {
+  opacity: .8;
 }
-#projects 
-.cards 
-.card 
-p{
+
+#projects .cards .card p {
   margin: 20px 0;
-  word-wrap:break-word;
+  word-wrap: break-word;
   font-size: .875em;
   color: #9ca3af;
   font-weight: 400;
   line-height: 30px;
 }
-#projects .layout a{
+
+#projects .layout a {
   display: block;
   text-align: center;
   margin-top: 45px;
   font-size: 1.3em;
   color: var(--text-color);
 }
-#projects .layout a:hover{
+
+#projects .layout a:hover {
   opacity: .8;
 }
 
 /*     */
 /*  Skills  */
 
-.icons{
+.icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.icons .icons-item{
+
+.icons .icons-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,7 +270,8 @@ p{
   min-width: 250px;
   margin: 30px 0;
 }
-.icons .icons-item h3{
+
+.icons .icons-item h3 {
   text-align: center;
   margin-top: 15px;
   text-transform: uppercase;
@@ -260,11 +279,12 @@ p{
 
 /*     */
 /* CONTACT */
-#contact p{
+#contact p {
   text-align: center;
   font-size: 1.2em;
 }
-.plataforms{
+
+.plataforms {
   margin: 20px 0;
   display: flex;
   justify-content: space-around;
@@ -272,59 +292,70 @@ p{
   margin: 25px auto 0;
   border-radius: 10px;
 }
-.plataforms svg{
+
+.plataforms svg {
   margin: 10px;
   cursor: pointer;
 }
-.plataforms a svg:hover{
+
+.plataforms a svg:hover {
   transition: .3s all ease;
   fill: #B5C1B5;
 }
-footer{
+
+footer {
   margin: 20px auto;
   padding: 15px;
   font-size: 1.1em;
 }
-footer i{
+
+footer i {
   color: var(--second-color);
 }
+
 @keyframes slidein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /*  */
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1110px) {
 
-  #about-me 
-  .right--Side img{
+  #about-me .right--Side img {
     display: none;
   }
-  #about-me .sides{
+
+  #about-me .sides {
     justify-content: center;
     text-align: center;
     gap: 0;
   }
-  .btns{
+
+  .btns {
     align-items: center;
     justify-content: center;
   }
-  #about-me 
-  .left--Side span{
+
+  #about-me .left--Side span {
     display: block;
     margin: 10px 0;
   }
-  #projects 
-  .cards 
-  .card{
+
+  #projects .cards .card {
     margin-bottom: 30px;
   }
 }
+
 /*       */
 
 
 @media screen and (max-width: 992px) {
- .nav-list{
+  .nav-list {
     position: absolute;
     right: 1000px;
     top: 0;
@@ -336,17 +367,22 @@ footer i{
     transition: .3s all ease-in;
     width: 100vw;
   }
- .nav-list li{
+
+  .nav-list li {
     padding: 15px;
   }
-  .menuMobile, #logo{
+
+  .menuMobile,
+  #logo {
     z-index: 2;
   }
-  .menuMobile{
+
+  .menuMobile {
     display: block;
     cursor: pointer;
   }
-  .menuMobile span{
+
+  .menuMobile span {
     background-color: var(--second-color);
     display: block;
     width: 35px;
@@ -355,63 +391,73 @@ footer i{
     border-radius: 3px;
     transition: .5s all ease-in;
   }
+
   .nav-list.active {
     right: 0;
-  }  
+  }
 
-  .menuMobile.active span:first-child{
+  .menuMobile.active span:first-child {
     transform: translateY(11px) rotate(135deg);
   }
-  .menuMobile.active span:nth-child(2){
+
+  .menuMobile.active span:nth-child(2) {
     opacity: 0;
   }
-  .menuMobile.active span:last-child{
+
+  .menuMobile.active span:last-child {
     transform: translateY(-8px) rotate(45deg);
   }
-  #about-me .layout .sides .left--Side h1 span b{
+
+  #about-me .layout .sides .left--Side h1 span b {
     animation: none;
   }
 
-  #projects 
-  .cards {
+  #projects .cards {
     gap: 18px;
   }
-  #projects 
-  .cards 
-  .card{
+
+  #projects .cards .card {
     min-width: 100%;
     margin-bottom: 0px;
   }
 }
-@media screen and (max-width: 600px){
-  section{
+
+@media screen and (max-width: 600px) {
+  section {
     padding: 5px;
   }
-  #about-me 
-  .left--Side h1{
+
+  #about-me .left--Side h1 {
     font-size: 1.8em;
   }
-  .title{
+
+  .title {
     font-size: 1.6em;
   }
-  #contact p{
+
+  #contact p {
     font-size: 1em;
   }
-  .icons-item svg{
+
+  .icons-item svg {
     height: 80px;
   }
-  .icons-item h3{
+
+  .icons-item h3 {
     font-size: 1.4em;
   }
+
   .card p {
     font-size: 1em;
   }
-  .btns{
+
+  .btns {
     justify-content: center;
     gap: 10px;
   }
-  footer{
+
+  footer {
     font-size: .83em;
     text-align: center;
   }
-} 
+}
