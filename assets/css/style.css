@@ -28,7 +28,9 @@
   color: var(--text-color);
   font-family: "Archivo", sans-serif;
 }
-
+.layout{
+  animation-iteration-count: 1 !important;
+}
 footer,
 .layout,
 nav {
