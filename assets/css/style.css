@@ -40,6 +40,7 @@ nav {
 
 .layout {
   padding: 45px 30px;
+  overflow-x: hidden;
 }
 
 html {
