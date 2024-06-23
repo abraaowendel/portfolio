@@ -306,12 +306,25 @@ header nav,
 }
 
 footer {
-  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px auto;
   padding: 15px;
   font-size: 1.1em;
+  height: 100%;
+}
+footer div{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+footer div img{
+  margin-left: 5px;
 }
 
-footer i {
+footer a {
   color: var(--second-color);
 }
 
@@ -421,6 +434,13 @@ footer i {
   #projects .cards .card {
     min-width: 100%;
     margin-bottom: 0px;
+  }
+  footer{
+    flex-direction: column;
+    margin: 20px 0 10px;
+  }
+  footer div:nth-child(2){
+    margin-top: 10px;
   }
 }
 
