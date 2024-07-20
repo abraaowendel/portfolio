@@ -207,18 +207,17 @@ header nav,
   background-color: var(--main-color);
   border-radius: 2px;
   max-width: 383px;
-  min-height: 200px;
+  min-height: 226px;
+  max-height: 226px;
   padding: 40px 30px;
   word-wrap: break-word;
-  border: 1px solid var(--second-color);
-  border-color: var(--second-color);
-  cursor: pointer;
+  border: 1px solid #151515;
+  transition: .6s all ease-in-out;
 }
-
-#projects .cards .card:hover {
-  opacity: .6;
+#projects .cards .card:hover{
+  transition: .6s all ease-in;
+  border-color: #00ff00;
 }
-
 #projects .cards .card h3 {
   font-size: 1.4em;
 }
@@ -227,7 +226,7 @@ header nav,
   padding: 10px 0;
   font-weight: 400;
   font-size: .875em;
-  color: var(--second-color);
+  color: #111111;
 }
 
 #projects .cards .card a:hover {
@@ -235,20 +234,20 @@ header nav,
 }
 
 #projects .cards .card p {
-  margin: 20px 0;
   word-wrap: break-word;
   font-size: .875em;
   color: #9ca3af;
   font-weight: 400;
   line-height: 30px;
+  margin: 15px 0;
 }
 
-#projects .layout a {
+#projects .layout #repositorios {
   display: block;
   text-align: center;
-  margin-top: 45px;
   font-size: 1.3em;
-  color: var(--text-color);
+  color: var(--second-color);
+  margin-top: 40px;
 }
 
 #projects .layout a:hover {
@@ -482,4 +481,12 @@ footer a {
     font-size: .83em;
     text-align: center;
   }
+}
+@media screen and (max-width: 380px) {
+  #projects .cards .card h3 {
+    font-size: 1.25em;
+  }
+  #projects .cards .card p {
+    font-size: .85em;
+  } 
 }

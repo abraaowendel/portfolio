@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfólio de Abraao Wendel" />
+    <meta name="description" content="AW Systems" />
     <meta name="keywords"
-        content="Abraao Wendel Abraão Wendel Abraão Abraao Wendel desenvolvedor, portfolio abraao,  backend, frontend, java, springboot" />
+        content="AW Systems, Abraao Wendel Abraão Wendel Abraão Abraao Wendel desenvolvedor, portfolio abraao,  backend, frontend, java, springboot" />
     <meta name="author" content="Abraao Wendel" />
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="-iCOoflnPqVZEs_G8E-eykL8_L9g5Ric4N0BDuhAKHs" />
@@ -69,7 +69,7 @@
             <div class="layout" data-aos="fade-right" data-aos-duration="2000">
                 <h2 class="title">Projetos</h2>
                 <div class="cards"></div>
-                <a href="https://github.com/abraaowendel?tab=repositories" target="_blank">Repositórios no GitHub</a>
+                <a href="https://github.com/abraaowendel?tab=repositories" target="_blank" id="repositorios">Repositórios no GitHub</a>
             </div>
         </section>
         <section id="skills">
@@ -181,11 +181,12 @@
         .then(dadosJson => {
             dadosJson.data.map((item, index) => {
                 cards.innerHTML += `
-            <div class="card" index=${index}>
+            <div class="card" index=${index} style="border-color: ${item.color}!important">
                 <h3 aria-label=${item.title}>${item.title}<h3>
                 <p aria-description=${item.description}>${item.description}</p>
                 <a href="${item.link}" target="_blank"
-                    aria-label="Esse link vai para o repositorio do Projeto no github">
+                    aria-label="Esse link vai para o repositorio do Projeto no github" 
+                    style="color: ${item.color}; display: ${item.link !== "" ? "block": "none"};" >
                     Visualizar Projeto</a>
             </div> 
         `
