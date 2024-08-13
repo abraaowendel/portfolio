@@ -386,11 +386,9 @@ footer a {
     padding: 15px;
   }
 
-  .menuMobile,
-  #logo {
+  .menuMobile,#logo{
     z-index: 2;
   }
-
   .menuMobile {
     display: block;
     cursor: pointer;
