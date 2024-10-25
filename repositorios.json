@@ -3,37 +3,37 @@
     {
         "title": "Vector Engenharia",
         "description": "Site para uma empresa de Engenharia.",
-        "link": "https://vector-engenharia.netlify.app/",
+        "url": "https://vector-engenharia.netlify.app/",
         "color": "#DC0000"
     },
     {
         "title": "Devs",
         "description": "Site para uma Loja de roupas masculina.",
-        "link": "https://devsbr.netlify.app/",
+        "url": "https://devsbr.netlify.app/",
         "color": "#FFFFFF"
     },
     {
         "title": "Em Desenvolvimento...",
-        "description": "Pegue o café e espere um pouco, estou desenvolvendo o projeto.",
-        "link": "",
+        "description": "Pegue o café e espere um pouco, estou desenvolvendo.",
+        "url": "",
         "color": ""
     },
     {
         "title": "Em Desenvolvimento...",
-        "description": "Pegue o café e espere um pouco, estou desenvolvendo o projeto.",
-        "link": "",
+        "description": "Pegue o café e espere um pouco, estou desenvolvendo.",
+        "url": "",
         "color": ""
     },
     {
         "title": "Em Desenvolvimento...",
-        "description": "Pegue o café e espere um pouco, estou desenvolvendo o projeto.",
-        "link": "",
+        "description": "Pegue o café e espere um pouco, estou desenvolvendo.",
+        "url": "",
         "color": ""
     },
     {
         "title": "Em Desenvolvimento...",
-        "description": "Pegue o café e espere um pouco, estou desenvolvendo o projeto.",
-        "link": "",
+        "description": "Pegue o café e espere um pouco, estou desenvolvendo.",
+        "url": "",
         "color": ""
     } 
 ]

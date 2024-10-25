@@ -28,9 +28,11 @@
   color: var(--text-color);
   font-family: "Archivo", sans-serif;
 }
-.layout{
+
+.layout {
   animation-iteration-count: 1 !important;
 }
+
 footer,
 .layout,
 nav {
@@ -214,10 +216,12 @@ header nav,
   border: 1px solid #151515;
   transition: .6s all ease-in-out;
 }
-#projects .cards .card:hover{
+
+#projects .cards .card:hover {
   transition: .6s all ease-in;
   border-color: #00ff00;
 }
+
 #projects .cards .card h3 {
   font-size: 1.4em;
 }
@@ -278,6 +282,11 @@ header nav,
   text-transform: uppercase;
 }
 
+.icons .icons-item img {
+  width: auto;
+  height: 105px;
+}
+
 /*     */
 /* CONTACT */
 #contact p {
@@ -304,6 +313,22 @@ header nav,
   fill: #B5C1B5;
 }
 
+#robbu-whatsapp-button {
+  background: transparent !important;
+}
+
+#robbu-whatsapp-button:not(.left)>.rwb-tooltip {
+  text-align: center;
+  right: 0;
+  color: var(--main-color);
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
+  background-color: var(--second-color);
+}
+
+
+
 footer {
   display: flex;
   align-items: center;
@@ -314,12 +339,14 @@ footer {
   font-size: 1.1em;
   height: 100%;
 }
-footer div{
+
+footer div {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
-footer div img{
+
+footer div img {
   margin-left: 5px;
 }
 
@@ -386,9 +413,11 @@ footer a {
     padding: 15px;
   }
 
-  .menuMobile,#logo{
+  .menuMobile,
+  #logo {
     z-index: 2;
   }
+
   .menuMobile {
     display: block;
     cursor: pointer;
@@ -432,11 +461,13 @@ footer a {
     min-width: 100%;
     margin-bottom: 0px;
   }
-  footer{
+
+  footer {
     flex-direction: column;
     margin: 20px 0 10px;
   }
-  footer div:nth-child(2){
+
+  footer div:nth-child(2) {
     margin-top: 10px;
   }
 }
@@ -480,11 +511,13 @@ footer a {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 380px) {
   #projects .cards .card h3 {
     font-size: 1.25em;
   }
+
   #projects .cards .card p {
     font-size: .85em;
-  } 
+  }
 }
