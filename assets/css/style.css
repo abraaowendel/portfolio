@@ -315,16 +315,17 @@ header nav,
 
 #robbu-whatsapp-button {
   background: transparent !important;
+  border: none !important;
 }
 
 #robbu-whatsapp-button:not(.left)>.rwb-tooltip {
   text-align: center;
-  right: 0;
-  color: var(--main-color);
-  font-weight: 600;
+  right: 0 !important;
+  color: var(--main-color) !important;
+  font-weight: 600 !important;
   letter-spacing: 1.8px;
   margin-bottom: 20px;
-  background-color: var(--second-color);
+  background-color: var(--second-color) !important;
 }
 
 

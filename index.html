@@ -14,10 +14,9 @@
     <meta name="msapplication-TileColor" content="#151515">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -46,7 +45,7 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="https://www.imagelato.com/images/logo-82c249c1.svg" alt="" width="200px" height="60px">
+            <img id="logo" src="https://www.imagelato.com/images/logo-82c249c1.svg" alt="Logo Abraao Wendel" width="200" height="60">
             <ul class="nav-list">
                 <li>
                     <a href="#about-me" aria-label="Te leva a seção Quem sou eu">Quem sou</a>
@@ -97,9 +96,7 @@
         <section id="skills">
             <div class="layout" data-aos="fade-left" data-aos-duration="3000">
                 <h2 class="title">Conhecimentos</h2>
-                <div class="icons">
-
-                </div>
+                <div class="icons"></div>
             </div>
         </section>
         <section id="contact">
@@ -140,9 +137,9 @@
         <link rel="stylesheet"
             href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
         <a id="robbu-whatsapp-button" target="_blank"
+        alt="Icon whatsapp"
             href="https://api.whatsapp.com/send?phone=5582981820315&text=Ol%C3%A1%2C%20Abra%C3%A3o!%F0%9F%98%81%0ATudo%20bem%3F%F0%9F%98%84%0ADesejo%20solicitar%20um%20projeto.%F0%9F%92%BB">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
-                height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
                 xml:space="preserve" class="">
                 <circle r="12" cx="12" cy="12" fill="#111111" shape="circle" transform="matrix(1,0,0,1,0,0)"></circle>
                 <g transform="matrix(0.5799999999999998,0,0,0.5799999999999998,5.039804068654779,5.039991880744424)">
@@ -168,7 +165,7 @@
         </div>
     </footer>
 </body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
     window.addEventListener('scroll', function () {
@@ -215,7 +212,7 @@
                 icons.innerHTML += `
                 <div class="icons-item">
                     <img
-                        src="${item.url}" />
+                        src="${item.url}" style={width: "100px"; heigth: "100px"} alt="icon ${item.title}"/>
                     <h3>${item.title}</h3>
                 </div>
         `
