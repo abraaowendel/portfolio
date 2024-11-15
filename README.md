@@ -10,7 +10,7 @@
   <img src="/assets/images/preview.png" alt="preview">
 </div>
 
-<h4 align="center"><a href="https://abraaowendel.github.io/portfolio/" target="_blank">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="www.abraaowendel.tech" target="_blank">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 
